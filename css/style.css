@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+body{
+    background-color:rgb(250 250 250);
+    font-family: verdana;
+}
+
+
+
+header{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px; 
+    
+    
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;   
+    font-family: verdana;
+    
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 40px;
+    color: darkgray;
+}
+
+nav a:hover{
+    color: coral;
+}
+
+nav li{
+   text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#banner{
+    height: 500px;
+    background-image: url(../image/abr.jpg);
+    background-size:cover; 
+}
+
+
+p.center{
+    color:whitesmoke;
+    padding-top: 11.5%;
+    margin: 0 10% 0 10%;
+    font-size:30px;
+    font-family:verdana;
+    width:55%;
+    line-height: 1.8;
+    
+    
+}
+
+
+.container{
+    width:100%;
+    background-color: aqua;
+    text-align: center;
+}
+
+main{
+    height:920px;
+   background-color: rgb(250 250 250);
+    
+}
+
+.project{
+    max-width: 35%;
+    display:inline-block;
+    padding:10px;
+       
+}
+
+
+footer{
+    background-color:rgb(41 44 47);
+    height:300px;
+    border-top: 3px solid coral;
+}
+
+h2{
+    font-family: verdana;
+    padding:5%;
+    font-weight: normal;
+    color:rgb(41 44 47);
+    
+}
+
+h1{
+    color:coral;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    
+}
+
+
+u{
+    color:coral;
+    text-decoration: none;
+    
+}
+
+a{  font-family: sans-serif;
+    text-decoration: none;
+   
+   
+}
+
+ a img:hover{
+    background-color:lightgray;
+    
+}
+
+section{
+    height:800px;
+    background-color: rgb(240 240 240);
+    
+}
+
+
+.about {
+    padding left:5px;
+    float:left;
+    width:30%;
+}
+
+
+img.about{
+    margin: 3% 4% 18% 9%;
+    padding:1%;
+    background-color:rgb(41 44 47);
+}
+
+p.full{
+    text-align: left;
+    width:85%;
+    margin:1% 0 0 9%;
+    font-family: verdana;
+    line-height: 1.8;
+    font-size: 13.3px;
+    color:rgb(41 44 47);
+}
+
+p.footer{
+    color:coral;
+     padding-top: 4.5%;
+    font-size: 25px;
+    
+}
+
+
+h6{
+    color:coral;
+    font-weight: normal;
+    padding-top: 3.5%;
+   
+}
+
+ul{
+    
+    padding-top: 2%;
+    
+}
+
+footer a{
+    
+    color:aliceblue;
+    font-family: verdana;  
+}
+
+footer li{
+   
+    padding-bottom: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

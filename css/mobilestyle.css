@@ -1,0 +1,63 @@
+/*media queries*/
+    
+    @media only screen and (max-width:620px) {
+  /* For mobile phones: */
+        body, .container,section,footer,main, img {
+            width:100%;
+        }     
+    
+        
+        p.center{
+            padding-top:30%;
+            font-size:20px;
+            width:70%;
+        }
+        
+        nav a{
+    margin-right: 20px;
+        }
+        
+        p.full{
+            font-size:12px;
+        }
+
+        img.about{
+            width:90%;
+            float:left;
+            margin: 3% 4% 10% 4%;
+        }
+        
+        .project{
+    max-width: 80%;
+            padding-bottom: 20px;
+  
+            
+        }
+        
+        main, section{
+            height:1170px;
+        }
+        
+        h2{
+            padding-top:9%;
+        }
+        
+        p.footer{
+            padding-top: 12.5%;
+            font-size:20px;
+        }
+        
+        ul{
+    padding-top: 5%;
+        }
+        
+        footer a{
+            font-size:12px;
+        }
+        
+        h6{
+            padding-top:25px;
+        }
+        
+        
+}
