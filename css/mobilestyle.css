@@ -1,41 +1,85 @@
 /*media queries*/
     
-    @media only screen and (max-width:620px) {
+    @media only screen and (max-width:710px) {
   /* For mobile phones: */
-        body, .container,section,footer,main, img {
+        body, .container,section,footer,main, img, nav a, nav li, banner,  {
             width:100%;
         }     
     
+        h1{
+             margin: 25% 25% 10% 25%;
+        }
         
         p.center{
             padding-top:30%;
-            font-size:20px;
-            width:70%;
-        }
-        
-        nav a{
-    margin-right: 20px;
-        }
-        
-        p.full{
-            font-size:12px;
-        }
-
-        img.about{
+            font-size:40px;
             width:90%;
-            float:left;
-            margin: 3% 4% 10% 4%;
         }
         
-        .project{
-    max-width: 80%;
-            padding-bottom: 20px;
-  
+        #banner{
+            height:550px;
             
         }
         
-        main, section{
-            height:1170px;
+        nav a{
+    margin-right: 14px;
+        }
+        
+        nav li{
+            margin-left: 25px;
+        }
+        
+        p.full{
+            font-size:12.5px;
+            margin-bottom: 3%;
+        }
+
+        img.about{
+            width:80%;
+            text-align: center;
+            margin: 4% 4% 12% 8%;
+        }
+        
+        main{
+            height:780px;
+            
+        }
+        
+        h2{
+            margin-top: 5.5%;
+            font-size: 35px;
+        }
+        
+        img.case{
+            float:left;
+            margin:none;
+            width:78%;
+            margin-left: 9%;
+        }
+        
+        
+        p.one{
+            width:77%;
+            margin-left: 11%;
+        }
+        
+        h4{
+            margin: 9% 0 5% 9%;
+            text-align: left;
+            width:90%;
+        }
+        
+        button{
+            margin:5% 0 5% 9%;
+        }
+        
+        article.full{
+            height:820px;
+        }
+        
+ 
+       section{
+            height:1470px;
         }
         
         h2{
