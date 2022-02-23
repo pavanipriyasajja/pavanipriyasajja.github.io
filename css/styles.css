@@ -1101,10 +1101,10 @@ font-size:2.5em;
     }
     
     ul{
-        overflow-x: hidden;
+/*        overflow-x: hidden;*/
         position:fixed;
         width:100%;
-        height:100vh;
+/*        height:100vh;*/
         background: White;
         top:80px;
         left:-100%;
