@@ -25,6 +25,7 @@ nav{
     background: whitesmoke;
     height:80px;
     width:100%;
+    overflow: hidden;
 }
 
 label.logo{
