@@ -655,6 +655,18 @@ iframe{
 /*---------Media Queries for the website----------*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1980px) {
     
     body{
@@ -665,7 +677,12 @@ iframe{
 /*    padding:2% 0;*/
     height:900px;
 }
-  
+ 
+
+    
+    
+    
+    
   footer{
     
   
