@@ -1,0 +1,1462 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+/*  background: tan;  */
+}
+
+header{
+
+    width: 100%;  
+   position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0;
+ overflow: hidden;
+   
+}
+
+
+nav{
+    background: whitesmoke;
+    height:80px;
+    width:100%;
+}
+
+label.logo{
+
+    font-size:35px;
+    line-height:80px;
+    padding: 0 100px;
+    font-weight:bold;
+    text-decoration: none;
+    
+}
+
+label.logo a{
+     text-decoration: none;
+    color: rgb(41 44 47);
+     font-family: 'Josefin Sans', sans-serif;
+}
+
+label.logo a:hover, a:hover{
+    color:rgb(227, 166, 167);
+}
+
+nav ul{
+    float:right;
+    margin-right:60px;
+
+}
+
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+
+    color: rgb(41 44 47);
+
+    padding:7px 13px;
+    border-radius:3px;
+    text-transform:uppercase;
+     text-decoration: none;
+    font-size:0.9em;
+     font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+
+a.active{
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size:30px;
+/*    color:white;*/
+     color: rgb(41 44 47);
+    float:right;
+    line-height:80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+
+
+#check{
+    display:none;
+}
+
+
+
+
+
+label #btn,
+label #cancel{
+
+     color: rgb(41 44 47);
+    font-size:30px;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+}
+
+
+
+.profile{
+    float:left;
+    width:50%;
+    background: rgb(227, 166, 167);
+    margin-top:2.12%;
+    
+}
+
+.profile-info{
+    float:right;
+    width:50%;
+     background: rgb(227, 166, 167);
+}
+
+
+.profile-image{
+    width:70%;
+  margin:0 12% 0 12%;
+    
+}
+
+
+.profile-text{
+   
+        font-size:1.7em;
+    line-height: 1.5;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right:12%;
+}
+
+
+.profile-text1{
+   font-size:4.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin:12% 0 5% 0;
+    font-weight: bold;
+}
+
+
+.profile-text2{
+     font-size:1.1em;
+    font-family:'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+.profile-text3{
+  font-size:2.1em; 
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:4.12% 0;
+}
+
+.profile-text4{
+font-size:3.1em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin:8% 0 5% 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.profile-text5{
+  font-size:2.1em; 
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: end;
+    color:rgb(227, 166, 167);
+}
+
+
+
+.btn{
+    width:250px;
+    height:60px;
+    border-color: white;
+    border-radius: 50px;
+    border:2px solid rgb(138, 154, 90);
+    margin:4% 0 4% 0;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size:1.2em;
+    color:white;
+    background: rgb(138, 154, 90);
+  
+   
+}
+
+
+.mybutton{
+    text-decoration: none;
+    color:white;
+
+}
+
+
+.btn:hover, .btn1:hover{
+    background-color:rgb(41 44 47);
+    border:none;
+    cursor: pointer;
+    
+}
+
+
+
+
+.btn1{
+    width:180px;
+    height:50px;
+    border-color: white;
+    border-radius: 50px;
+    border:2px solid rgb(138, 154, 90);
+    margin:4% 0 4% 0;
+     font-family: 'Josefin Sans', sans-serif;
+     font-size:1.2em;
+    color:white;
+    background: rgb(138, 154, 90);
+  
+   
+}
+
+
+
+
+.project-images{
+     border-radius: 30px;
+    padding:2%;
+}
+
+
+.testimoni{
+    font-size:1.1em; 
+    line-height: 1.8;
+    justify-content: center;
+     font-family:'Lato', sans-serif;
+}
+
+
+
+
+.testi{
+    padding:2% 5%;
+    border-radius: 20px;
+    border:2px solid rgb(138, 154, 90);
+    margin-bottom: 30px;
+    background-color:#fbf8f3;
+}
+
+
+
+.testi1{
+    padding:2% 5%;
+    border-radius: 20px;
+    border:2px solid rgb(138, 154, 90);
+    margin-bottom: 100px;
+    background-color:#fbf8f3;
+    
+}
+
+
+
+
+
+.people{
+    clear:both;
+    margin:10% auto;
+    padding-top:4.12%;
+    padding:3.12% 3% 0% 3%;  
+}
+
+.people1{
+    clear:both;
+    margin:10% auto;
+/*    padding-top:4.12%;*/
+    padding:0 3% 0% 3%;  
+}
+
+
+
+
+
+#banner1{
+    padding:4% 0% 4% 0%;
+   background: rgb(227, 166, 167);
+    margin-top:75px;
+    height:820px;
+     clear: both;
+    
+}
+
+
+
+
+
+#banner img{
+    width:60%;
+/*    padding-top:2.12%;*/
+}
+
+
+
+.wrapper{
+     max-width: 1200px;
+/*    background:beige;*/
+    margin:0 auto;
+
+        
+}
+
+
+
+
+
+
+.row{
+    clear: both;
+   
+}
+
+
+p{
+    margin:2.12% 0;
+}
+
+
+.third{
+    width:31.91%;
+    margin-right:2.12%;
+
+    background: #f9f9f9;
+    float:left;
+
+    margin-bottom: 2.12%;
+    margin-top:2%;
+}
+
+.third:last-of-type{
+    margin-right: 0;
+}
+
+
+.col8{
+    width:48.93%;
+
+    float:left;
+    margin-top:1.12%;
+    margin-bottom:1.12%;
+    padding:4% 4%;
+background-color:#fbf8f3;
+
+}
+
+
+.col8:last-of-type{
+    float:right;
+    
+}
+
+
+
+img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+u{
+    border-bottom:5px solid rgb(227, 166, 167);
+    text-decoration: none;
+    color:white;
+}
+
+
+
+h4{
+    color:lightgray;
+    font-weight: 300;
+    text-align: center;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+
+footer{
+    clear:both;
+    margin:0 auto;
+   background: rgb(138, 154, 90);
+   padding:2.12% 0 5% 0;
+    border-top:5px solid rgb(227, 166, 167); 
+    
+}
+
+
+i{
+    font-size:25px;
+   
+     color:rgb(227, 166, 167);
+}
+
+i:hover{
+      color:rgb(41 44 47);
+}
+
+footer ul{
+    display:flex;
+     justify-content: center;
+    margin:0% 0 0.5% 0; 
+   
+}
+
+footer li{
+    float:left;
+
+    list-style-type: none;
+    padding:1.2%;
+}
+
+.up-arrow{
+    float:right;
+    font-size:30px;
+    margin:0 3% 3% 0;
+   
+}
+
+
+
+.contact-headline{
+   font-size:2.1em; 
+/*    margin-top:4.12%;*/
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:1% 0; 
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*-----About page-----*/
+
+
+
+.meux{
+    width:100%;
+/*  padding:5% 6% 5% 6%;*/
+/*    padding:5%;*/
+    padding:75px 0% 0.3% 0%;
+}
+
+.about-text{
+    font-size:1.1em;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+ text-align: justify;
+  text-justify: inter-word;
+/*    margin-right:12%;*/
+}
+
+
+
+.myskill1{
+    font-size:2.1em; 
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:0.5% 0 2.12% 0;
+   color:rgb(227, 166, 167);
+    
+}
+
+.myskills2{
+    font-size:2.1em; 
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:5% 0 2.12% 0;
+   color:rgb(227, 166, 167);
+}
+
+
+.myskill3{
+    font-size:2.1em; 
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:0% 0 1% 0;
+   color:rgb(227, 166, 167);
+    
+}
+
+
+
+
+
+
+
+
+
+/*-------  Work-------*/
+
+
+.meux1{
+    width:100%;
+/*  padding:5% 6% 5% 6%;*/
+/*    padding:5%;*/
+    padding:75px 0% -3% 0%;
+}
+
+.work-text{
+    font-size:3.1em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin:-1.5% 0 5% 0;
+    font-weight: bold;
+    text-align: center;
+    padding-top:4.12%;
+}
+
+
+
+
+
+.project-content{
+     width:100%;
+/*   height:300px;*/
+    background-color:#fbf8f3;
+    margin:1% auto;
+/*    background-color: rgb(227, 166, 167);*/
+    
+}
+
+.project-details{
+/*    width:80%;*/
+    margin:0 14%;
+    padding-bottom: 4.12%;
+}
+
+.WorkSuper .wrapper{
+/*    width:80%;*/
+    margin:0 14%;
+/*    padding-bottom: 4.12%;*/
+}
+
+
+.next{
+   justify-content: center;
+    text-align: center;
+    padding:1% 0 1% 0;
+    margin:-4% 0 1% 0;
+}
+
+.fideleft{
+    float:left;
+    width:49%;
+    background-color:#fbf8f3;
+/*    margin:0 0 0 1%;*/
+     margin:0 0.5%;
+    padding:1%;
+/*    border:1px solid lightgray;*/
+}
+
+
+
+
+
+.fideright{
+    float:right;
+    width:49%;
+     background-color: #fbf8f3;
+    padding:1%;
+/*    border:1px solid lightgray;*/
+    margin:0 0.5%;
+/*    margin:0 1% 0 0;*/
+}
+
+.fide{
+    padding:4% 0 4% 0;
+    margin-top:2.12%;
+    margin-bottom:2.12%;
+    clear:both;
+}
+
+
+
+
+.note{
+    font-size:1.1em;
+    font-family:'Lato', sans-serif;
+    line-height: 1.5;
+    color:rgb(138, 154, 90);
+}
+
+
+.need{
+    width:55%;
+    text-align: center;
+    margin:0 15%;
+}
+
+
+
+
+
+
+/*   Embedded container---*/
+
+
+#embedded{
+    display:block;
+/*    justify-content: center;*/
+    margin-left:4.12%;
+    
+    
+}
+
+
+iframe{
+    width:100%;
+    height:680px;
+/*    float:left;*/
+    padding:4.12%;
+    margin-bottom:1.12%;
+    padding:2.12% 8.12% 
+}
+
+#embed{
+    width:100%;
+    
+}
+
+
+
+
+
+
+
+
+
+/*---------Media Queries for the website----------*/
+
+
+@media screen and (max-width:1980px) {
+    
+    body{
+/*        background:green;*/
+    }
+    
+    #banner1{
+/*    padding:2% 0;*/
+    height:900px;
+}
+  
+  footer{
+    
+  
+  
+   padding:2.12% 0 10% 0;
+    
+    
+}  
+
+
+    
+}
+
+
+@media screen and (max-width:1920px) {
+    
+    body{
+/*        background:blue;*/
+    }
+   
+    #banner1{
+/*    padding:2% 0;*/
+    height:880px;
+}
+    
+   
+}
+
+
+
+@media screen and (max-width:1450px) {
+    body {
+/*        background: red;*/
+    }
+    
+    .about-text{
+        padding:0 4%;
+    }
+    
+    
+    .meux1{
+    margin-top:2.12%;
+} 
+    
+    #banner1{
+    padding:2% 0;
+    height:700px;
+}
+
+    
+    .profile-text{
+        font-size:1.5em;
+   
+}
+
+
+.profile-text1{
+   font-size:3.8em;
+
+}
+   
+    footer{
+    
+  
+   padding:2.12% 0 6% 0;
+   
+    
+}
+    
+   .WorkSuper .wrapper, .project-details{
+/*    width:80%;*/
+    margin:0 10%;
+    }
+    
+    
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    body {
+/*        background:orange;*/
+    }
+    
+    .profile-text1{
+   font-size:3.4em;
+
+} 
+    
+   .profile-text{
+        font-size:1.4em;
+   
+} 
+  
+    
+     .WorkSuper .wrapper, .project-details{
+/*    width:80%;*/
+    margin:0 5%;
+    }
+    
+ .meux1{
+    margin-top:4.12%;
+}   
+    
+    
+  .people{
+   
+    margin:14% auto;
+   
+    padding:4.12%% 5% 0% 5%;  
+}  
+    
+    
+/*
+  #clickable{
+    width:30%;
+}  
+*/
+  
+   
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    
+     label.logo{
+        font-size:30px;
+        padding-left:50px;
+    }
+    
+    nav ul li a{
+        font-size:0.9em;
+    }
+    
+    .meux1{
+    margin-top:4.12%;
+} 
+    
+    
+    body {
+/*        background: #666;*/
+    }
+    
+    
+     .WorkSuper .wrapper, .project-details{
+/*    width:80%;*/
+    margin:0 6%;
+    }
+    
+    
+     #banner1{
+    padding:3% 0;
+    height:650px;
+}
+    
+  .profile-image{
+    width:100%;
+/*  margin:0 12% 0 12%;*/
+      padding-right: 5%;
+    
+}
+
+   .profile-text1{
+   font-size:2.8em;
+
+} 
+    
+   .profile-text{
+        font-size:1.2em;
+   
+}   
+    
+.about-text{
+    font-size:1.1em;
+    }
+
+.profile-text2{
+     font-size:1em;
+    padding:0.2% 0 0 0;
+   
+}
+
+.profile-text3{
+  font-size:1.8em; 
+    
+}
+
+.profile-text4{
+font-size:2.5em;
+    
+}
+
+
+
+.profile-text5{
+  font-size:1.8em; 
+   
+}
+
+    .work-text{
+       font-size:2.5em;
+        line-height: 1.5;
+        margin:0 15%;
+    }    
+    
+   
+ .testimoni{
+    font-size:1em; 
+  
+}
+   
+  .contact-headline{
+   font-size:1.5em; 
+
+}
+
+    .myskill1{
+        font-size:1.8em;
+    } 
+    
+    .myskills2, .myskill3{
+        font-size:1.8em;
+        line-height: 1.1;
+    } 
+    
+    
+/*
+    #logo{
+    width:180px;
+    
+}
+*/
+     i{
+    font-size:20px;
+    
+}
+   
+/*
+    #banner1{
+        padding:10% 0;}
+*/
+    
+    footer li{
+   
+   
+    padding:2%;
+}
+    
+    
+/*
+    .banner{
+    font-size:1.5em;
+         padding:18% 2%; 
+}
+*/
+/*
+    .about h1{
+        font-size:2.5em;
+    }
+*/
+    
+
+
+    u{
+   
+    border-bottom:3px solid rgb(227, 166, 167);
+    
+    
+}
+    footer ul{
+     margin:0.5% 0 0.5% 0;
+    }
+    
+/*
+#clickable{
+    width:35%;
+}
+*/
+  
+   
+    
+    
+    
+    
+ 
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    
+    body {
+/*        background: yellow;*/
+    }
+    
+    
+    .profile-image{
+    width:80%;
+
+      
+    
+}
+
+    
+    .work-text{
+        margin:0 12%;
+        padding-bottom: 2%;
+    }    
+    
+    .meux1{
+    margin-top:6.12%;
+} 
+    
+    
+    
+    
+    
+  .profile{
+    float:none;
+    width:40%;
+   
+    margin-top:none;
+    
+}
+
+.profile-info{
+    float:none;
+    width:60%;
+     background: rgb(227, 166, 167);
+    margin-top:none;
+}  
+    
+   #banner1{
+    padding:3% 0;
+    height:auto;
+}  
+    
+    
+    
+    
+    
+  .testi{
+    padding:2% 5%;
+    border-radius: 20px;
+    border:2px solid rgb(138, 154, 90);
+    margin-bottom: 30px;
+    background-color:#fbf8f3;
+}
+
+.people{
+    clear:both;
+    margin:10% auto;
+   padding:0 3%;
+/*    padding:3.12% 3% 0% 3%;  */
+}
+
+    .contact-headline{
+        line-height: 1.8;
+        padding:2% 2%;
+        margin:4% 2% 0 2%;
+    } 
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    footer{
+        height:240px;
+    }
+    
+    
+    
+    
+    
+    
+     .checkbtn{
+        display:block;
+    }
+    
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background: White;
+        top:80px;
+        left:-100%;
+        text-align:center;
+        transition: all .5s;
+    }
+    
+    nav ul li{
+        display:block;
+        margin:50px 0;
+/*        margin:30px 0;*/
+        line-height:30px;
+    }
+    
+    nav ul li a{
+        font-size:20px;
+    }
+    
+    a:hover, a.active{
+        background:none;
+        color:rgb(227, 166, 167);
+        
+    }
+    
+    #check:checked ~ ul{
+        
+        left:0;
+    }  
+    
+   /*second version*/
+    
+    label #btn{
+        display:block;
+    }
+
+    #check:checked ~ label #btn{
+        display: none;
+    }
+    
+     #check:checked ~ label #cancel{
+        display:block;
+    }
+    
+    
+    section{
+        background: url(abr1.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh - 80px);
+    }
+    
+       
+    
+    
+    
+   .profile{
+    float:none;
+    width:100%;
+
+    
+}
+
+    
+.profile-info{
+    float:none;
+    margin-left: 4.41%;
+    padding-left:4.12%;
+  width:100%;
+   
+} 
+    
+/*
+#banner1{
+   
+    height:1800px;
+  
+   
+}    
+*/
+    
+    
+   
+    
+    
+    
+       .col8 {
+    width: auto;
+    float: none;
+    margin-bottom: 20px;
+           padding:6.12%;
+           text-align: center;
+}
+    
+  
+
+.col8:last-of-type {
+    float: none;
+}
+    
+    .third {
+    width: auto;
+    float: none;
+    margin-right:0;
+    margin-bottom: 20px;
+        padding:6.12%;
+}
+     .banner, h1, .about h1{
+    font-size:1.5em;
+         line-height: 1.5;
+
+}
+   
+    #banner1{
+        padding:8% 0;}
+    
+    .up-arrow{
+    margin:0 5% 5% 0;
+}
+    
+    footer ul{
+   
+    
+    margin:3% 0 2% 0;
+   
+   
+}
+    
+    
+    footer li{
+
+    padding:1.5%;
+}
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+    
+    #embedded{
+    display:block;
+
+    margin-left:2.12%;
+    
+}
+
+
+iframe{
+    width:100%;
+    float:none;
+    padding:1.12%;
+}
+
+ 
+/*
+  #clickable{
+    width:40%;
+}  
+*/
+  
+    
+    
+
+ 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*These styles are for my phone*/
+
+@media screen and (max-width:700px){
+    
+    body {
+/*        background: #ddd;*/
+    }
+    
+    .profile-text4{
+        font-size:2.1em;
+        line-height: 1.5;
+    }
+    
+    .meux1{
+    margin-top:9.12%;
+} 
+    
+    
+    
+    
+    
+/*
+    nav li{
+    padding:4%;
+ 
+} 
+*/
+/*
+    nav a{
+    
+    font-size:1.1em;
+        }
+*/
+/*
+        font-size:0.8em;
+   
+*/
+
+
+    
+/*
+     nav ul li{
+        
+        margin:40px 0;
+         
+         
+
+    }
+*/
+    
+/*
+    h2{
+        font-size:1.35em;
+    }
+*/
+    
+    
+/*
+    #logo{
+    width:160px;
+    
+}
+*/
+    
+
+    
+/*
+    #banner1{
+        padding:14% 0;}
+*/
+    
+/*
+    h1, .about h1{
+       font-size:1.5em;
+        line-height: 1.8;
+    }
+*/
+    
+    i{
+    font-size:18px;
+    
+}
+    
+    footer li{
+   
+   
+    padding:2%;
+}
+    
+    h4{
+        font-size:0.9em;
+    }
+  
+    
+/*    ---About seciton---*/
+    
+    
+
+    
+
+   
+
+    
+
+    
+
+    
+    
+/*
+    .voice .banner{
+    padding:3%;
+}
+*/
+  
+  
+/*
+ .voice #heading, .work #heading {
+    
+    font-size:1.8em;
+
+}
+*/
+
+
+/*
+.voice .row{
+    margin:5% auto;
+}
+*/
+  
+   
+/*
+  #clickable{
+    width:50%;
+}   
+ 
+*/
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
