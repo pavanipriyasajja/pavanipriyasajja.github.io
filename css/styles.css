@@ -1017,7 +1017,7 @@ font-size:2.5em;
     
   .profile{
     float:none;
-    width:40%;
+    width:50%;
    
     margin-top:none;
     
@@ -1129,11 +1129,13 @@ font-size:2.5em;
     }
     
     
+/*
     section{
         background: url(abr1.jpg) no-repeat;
         background-size: cover;
         height: calc(100vh - 80px);
     }
+*/
     
        
     
@@ -1307,7 +1309,7 @@ iframe{
     }
     
     .meux1{
-    margin-top:12.12%;
+    margin-top:14.12%;
 } 
     
     
@@ -1400,7 +1402,7 @@ iframe{
     
 label.logo{
 
-    font-size:15px;
+    font-size:25px;
     
     
 }
