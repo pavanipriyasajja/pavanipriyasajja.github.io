@@ -1010,6 +1010,7 @@ font-size:2.5em;
     
     body {
 /*        background: yellow;*/
+        overflow: hidden;
     }
     
     
