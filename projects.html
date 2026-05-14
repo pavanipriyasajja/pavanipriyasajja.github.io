@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — Pavanipriya Sajja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* ── PROJECT GRID ── */
+.projects-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.proj-card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:border-color .2s,transform .18s,box-shadow .2s;text-decoration:none;color:inherit}
+.proj-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:0 10px 32px rgba(0,0,0,.08)}
+.proj-card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.proj-img{height:260px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative;overflow:hidden;flex-shrink:0;background:var(--surface);border-radius:10px;margin:1rem 1rem 0}
+.proj-img img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;border-radius:10px}
+.proj-body{padding:1.25rem 1.5rem 1.5rem}
+.proj-body h3{font-size:1.125rem;font-weight:600;letter-spacing:-.02em;margin-bottom:.5rem;line-height:1.3}
+.proj-body p{font-size:.875rem;color:var(--ink-soft);line-height:1.6;margin-bottom:.75rem}
+.proj-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:.875rem;font-weight:600;color:var(--accent);transition:gap .15s}
+.proj-card:hover .proj-cta{gap:.65rem}
+.proj-cta svg{width:14px;height:14px}
+@media(max-width:640px){.projects-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a class="nav-brand" href="index.html">Pavanipriya</a>
+  <div class="nav-links" id="navLinks" role="menubar">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="about.html">About Me</a>
+  </div>
+  <button class="nav-mobile-btn" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main role="main">
+  <div class="page-inner">
+    <header class="page-header">
+      <h2>Projects</h2>
+      <p>Recent research, design, and open source work.</p>
+    </header>
+    <div class="projects-list" role="list">
+
+      <!-- PROJECT 1 -->
+      <a class="proj-card" href="project-1.html" role="listitem" aria-label="Multi-Cluster Kubernetes UX Research">
+        <div class="proj-img">
+          <img src="images/multicluster.png" alt="Multi-Cluster Kubernetes UX Research"/>
+        </div>
+        <div class="proj-body">
+          <h3>Kubernetes Multi-Cluster User Research</h3>
+          <p>Kubernetes Multi-cluster  is very complex to manage in cloud native ecosystem. Our research turns difficult operations into simple, human-friendly experiences.</p>
+          <span class="proj-cta">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+      <!-- PROJECT 2 -->
+      <a class="proj-card" href="project-2.html" role="listitem" aria-label="KServe Usability Study">
+        <div class="proj-img">
+          <img src="images/super.png" alt="Redesigning the Super Purposes Digital Ecosystem: Website, Course Platform & Marketing Experience"/>
+        </div>
+        <div class="proj-body">
+          <h3>Designing the Super Purposes Digital Ecosystem</h3>
+          <p>Super Purposes is a career coaching and education platform where I led the end-to-end redesign of their digital ecosystem - website, course platform, and marketing experience over three years
+</p>
+          <span class="proj-cta">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+      <!-- PROJECT 3 -->
+      <a class="proj-card" href="project-3.html" role="listitem" aria-label="DevEx Engineer Journey Maps">
+        <div class="proj-img">
+          <img src="images/proj3.png" alt="DevEx Engineer Journey Maps"/>
+        </div>
+        <div class="proj-body">
+          <h3>Rural net - Internet speed testing web application.</h3>
+          <p>Rural Net is a community-driven web app that tests and maps real-world internet speeds in rural areas to help advocate for better broadband infrastructure and policy support. Designed the end-to-end UI including design system, accessibility guidelines, and high-fidelity prototypes.</p>
+          <span class="proj-cta">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+      <!-- PROJECT 4 -->
+      <a class="proj-card" href="project-4.html" role="listitem" aria-label="Orcasound Mobile Application Design">
+        <div class="proj-img">
+          <img src="images/proj4.png" alt="Orcasound Mobile Application Design"/>
+        </div>
+        <div class="proj-body">
+          <h3>Orcasound — Mobile Application Design</h3>
+          <p>Open-source marine conservation platform — improving the mobile reporting experience through wireframing, prototyping, and usability testing.</p>
+          <span class="proj-cta">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</main>
+
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pavanipriya Sajja — UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(5rem,12vh,10rem) 1.5rem clamp(4rem,10vh,8rem);max-width:860px;margin:0 auto}
+.hero-avatar{width:80px;height:80px;border-radius:50%;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-size:2rem;margin-bottom:2rem;border:2px solid var(--accent-mid)}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:600;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.25rem}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{font-size:1.0625rem;line-height:1.7;color:var(--ink-soft);margin-bottom:2.5rem;max-width:720px}
+.hero-btns{display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center}
+</style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a class="nav-brand" href="index.html">Pavanipriya</a>
+  <div class="nav-links" id="navLinks" role="menubar">
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About Me</a>
+  </div>
+  <button class="nav-mobile-btn" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main role="main">
+  <section class="hero">
+    <div class="hero-avatar" aria-hidden="true">👋</div>
+    <h1>Hi, I'm <em>Pavanipriya Sajja.</em></h1>
+    <p>UX researcher and designer with <strong>5 years</strong> of experience leading <strong>end-to-end</strong> product design, from <strong>0→1 strategy to execution</strong>. I specialize in simplifying complex <strong>cloud-native workflows, tools,</strong> and platforms through <strong>developer-focused UX research and design</strong>. Currently, I'm working on <strong>Kubernetes multi-cluster systems.</strong></p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="projects.html">View Projects</a>
+      <a class="btn-secondary" href="about.html">About Me</a>
+    </div>
+  </section>
+</main>
+
+<script src="nav.js"></script>
+</body>
+</html>
