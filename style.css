@@ -119,3 +119,28 @@ nav{
   .nav-links.open a{width:100%;padding:.6rem .75rem}
   .nav-mobile-btn{display:flex}
 }
+
+
+
+
+
+<style>
+  .pdf-container {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+  }
+
+  .pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .pdf-container {
+      height: 70vh;
+    }
+  }
+</style>    
