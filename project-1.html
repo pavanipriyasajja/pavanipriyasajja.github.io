@@ -156,44 +156,29 @@ We also mentioned during the survey that all responses would be anonymized, and 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-    <!-- DESIGN PROCESS -->
+    <!-- researh results -->
     <div class="detail-section">
-      <p class="design-process-title">Design Process</p>
-      <p style="font-size:.9375rem;line-height:1.75;color:var(--ink-soft)">The design process involved research, wireframing, and iterative prototyping to validate decisions with real users before implementation.</p>
-      <div class="design-process-grid">
-        <div class="design-process-placeholder">🖼️</div>
-        <div class="design-process-placeholder">✨</div>
-      </div>
+
+<h2>Qualitative and quantitative analysis highlights:</h2>
+
+<p><b>Overall Quantitative Insights</b></p>
+<p>We analyzed participant roles, cluster scale, deployment environments, and tenancy models to understand how engineers manage Kubernetes systems. The majority of respondents were Platform Engineers (39%) and DevOps Engineers (26%), showing that multi-cluster management is a cross-functional responsibility. Most engineers manage 1–50+ clusters per month, with over half handling more than 10 clusters, highlighting widespread medium to large-scale operations.</p>
+<p>Cluster deployments are highly distributed, spanning single cloud (48.8%), on-premise (44.7%), multi-cloud (30.6%), and hybrid environments (26.5%), indicating that engineers often operate across multiple infrastructure types. In terms of tenancy, 76.9% of respondents use multi-tenant or hybrid models, reflecting a strong shift toward shared cluster usage.</p>
+<p>Overall, the findings show that Kubernetes multi-cluster operations are widely adopted, cross-functional, and highly complex, driven by scale, environment diversity, and shared infrastructure models.</p>
+
+<p><b>Qualitative insights:</b></p>
+<p>We identified several key patterns in how engineers manage multi-cluster environments. Clusters are deployed across infrastructure providers (cloud, on-prem, edge), often separated by isolation needs, business units, regions for redundancy, and environment stages (dev, staging, production). Among these, environment separation is the most common practice, enabling safe and controlled deployments.</p>
+<p>We also found four major challenges: workload management (51%), observability (39%), operational complexity (25%), and time management (10%). Engineers struggle with distributed visibility, context switching, repetitive tasks, networking complexity, and manual incident handling, where situational awareness is often the biggest bottleneck.</p>
+</p>For future improvements, three key needs emerged: AI-driven automation, flexible system architecture, and simplified UX with clear workflows and documentation. Additionally, a few niche patterns like “dashboard-as-code” and specialized hardware support were also observed.</p>
+
+<p><b>Research Areas and Recommendations</b></p>
+<p>From our analysis, five key research areas emerged: documentation gaps, centralized monitoring, AI-driven automation, operational complexity, and developer UX. To address these, we recommend improving and updating multi-cluster documentation by identifying gaps in existing materials and working with SIG communities to create practical, real-world engineering guides.</p>
+<p>For observability, we recommend building a unified system with shared standards for logs, metrics, storage, network visibility, AI-driven alerts, and role-based dashboards. For automation, AI should handle routine tasks and predict issues before they occur, enabling proactive system management.</p>
+<p>To reduce operational complexity and skill gaps, organizations should invest in hands-on training, zero-trust practices, automation reliability, and peer learning through playbooks. Finally, developer UX should be improved by studying real workflows and designing simpler, more intuitive multi-cluster systems.</p>
+<p>Overall, the research emphasizes that the future of multi-cluster management depends on combining strong technical systems with human-centered design focused on simplicity and usability.</p>
+
+
+      
     </div>
 
    
