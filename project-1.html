@@ -182,24 +182,77 @@ We also mentioned during the survey that all responses would be anonymized, and 
     </div>
 
    
-    
-    
+ <!-- Persona -->
+    <div class="detail-section">
+<h2>Hybrid Engineer persona creation and workflow mapping:</h2>
+<p><b>What drove the decision to develop personas and journey maps?</b></p>
+<p>Even after collecting and summarizing multi-cluster survey data, the findings can still feel scattered and difficult to apply directly to real-world solutions. While raw research data explains what problems engineers face, it does not always show how those challenges affect different users or when they occur in real workflows.
+</p>
+      <p>To make the insights more actionable, we used user research methods such as personas and journey maps to organize the data into clearer patterns, helping better understand user behaviors, pain points, and operational experiences.
+</p>
+      <p><b>Method and process:</b></p>
+      <p>We created personas and journey maps by first analyzing raw survey data and identifying recurring patterns and themes. These insights were synthesized into key user pain points and goals, which were then structured into persona templates. Journey maps were developed to visualize user workflows, behaviors, and experiences across different stages, helping uncover actionable product insights and opportunities for improvement.</p>
+
+      <p><b>Alex Persona: </b></p>
+      <p>Alex is a <b>hybrid engineer who deploys, manages, and maintains observability </b>across multiple Kubernetes clusters in on-prem Edge locations and cloud environments.</p>
+<p>His <b>primary use of multi-cluster</b> setups is to separate environments (production vs. non-production) and distribute workloads across clusters and regions for fault isolation.
+
+</p>
+
+      <p><b>Pain points:
+</b></p>
+
+      <ul>
+        <li>lack of purpose-built multi-cluster tooling, repetitive manual work, and the day-to-day operational burden of managing multi clusters</li>
+     <li>Limited skilled engineers, shallow vendor support, and the high barrier to entry that leaves teams isolated during complex issues.
+</li>
+        <li>On-prem vs. cloud architecture differences, config inconsistencies, identity system mismatches, and network/sync challenges across environments.
+</li>
+        <li>Cross-cluster visibility gaps, no unified observability view, and the manual triage burden when alerts fire.</li>
+      <li>Managing and auditing access across clusters and environments, RBAC complexity at scale, identity federation challenges, and secure baseline provisioning.</li>
+      
+      </ul>
+  <p><b>Key insights: </b></p> 
+<p>The persona helps identify the right starting point for engineers adopting multi-cluster setups.
+</p>
+      <ul>
+        <li>The persona provides a clear, research-backed representation of engineers, replacing the idea of an imagined user.
+</li>
+        <li>Discussions and decisions about the project can be based on real engineer research insights rather than assumptions.</li>
+      <li>The persona helps teams focus on solving the most impactful problems engineers face in multi-cluster environments.</li>
+      <li>Documentation can be organized around engineers’ real workflows, tasks, and goals.
+</li>
+      </ul>
+
+
+<p><b>Workflow mapping: </b></p>
+
+      <p>Hybrid engineer workflows mapping using the <b>User research journey mapping</b> techniques. The journey revealed recurring challenges such as configuration drift, fragmented tooling, networking complexity, manual deployments, operational overhead, and limited visibility across cloud, on-prem, and edge environments. By analyzing what engineers do, think, and feel at each stage, we identified opportunities for unified observability, automation, standardized workflows, simplified networking, reusable documentation, and developer-friendly multi-cluster management systems that reduce operational toil and improve efficiency.
+</p>
+      <p>Entire journey insights reveal opportunities to improve <b>tooling, workflows, architecture, frame work, processes, methods, and documentation</b>—helping teams <b>reduce operational friction</b> and deliver a <b>better developer experience</b> for multi-cluster operations.
+
+</p>
+      <p><b>Key insights:</b></p>
+<ul>
+  <li>Engineers deploying workloads across multi-cluster environments often start with confidence, believing they can manage the complexity with familiar tools and architecture, methods, frame work, documentations.</li>
+<li>The reality of cross-cluster operations — Spending hours on deploying and managing and upgrading multi-clusters, on prem and Cloud architecture difference, network fragmentation, and configuration sprawl, observability, complex UI/UX tooling, manual triage while critical alerts occur — reveals itself gradually.
+</li>
+  <li>The turning point comes when teams quantify the operational burden and adopt unified management approaches with automation, transforming chaos into a scalable, maintainable architecture.</li>
+  </ul>    
+      
+      
+  </div>
+
+  
     
     <!-- OUTCOMES -->
     <div class="detail-section">
-      <h2>Outcomes</h2>
-      <p>Findings presented at KubeCon Atlanta; white paper in active review with the CNCF SIG Multi-cluster group, informing roadmap prioritization for multi-cluster tooling.</p>
+      <h2>Next Steps:</h2>
+      <p>We identified a Hybrid Engineer persona and created a workflow map, but we still need to understand the challenges faced by other target engineering groups working with multi-cluster systems. As a next step, we plan to create additional personas and workflow maps to identify cross-patterns and uncover the unique problems experienced by different types of engineers from the raw research data. We are also beginning the next phase of user research by conducting 1:1 interviews with engineers to gain deeper insights into their challenges, needs, and experiences while working with multi-cluster solutions.
+
+</p>
+    
     </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -208,8 +261,10 @@ We also mentioned during the survey that all responses would be anonymized, and 
 
     <!-- BUTTONS -->
     <div class="detail-btns">
-      <a class="btn-primary" href="#">View Live Demo</a>
-      <a class="btn-secondary" href="#">View Source Code</a>
+<p>Findings presented at KubeCon Atlanta-2025, KubeConEU-2026, SIG multicluster community meetings </p>  
+      
+      <a class="btn-primary" href="https://youtu.be/u_WfTU3pL1o?si=Cu-GYsDZhXooxHEe" target="_blank">KubeConNA Video</a>
+      <a class="btn-secondary" href="https://youtu.be/fjRT6tdsXLU?si=w1m4UnGawGKDnKRr" target="_blank">KubeConEU Video</a>
     </div>
 
   </div>
