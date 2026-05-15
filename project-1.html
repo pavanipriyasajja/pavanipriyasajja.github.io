@@ -136,7 +136,9 @@ Cloud-Native Ecosystems, Developer Experience (DevEx), Multicluster workflow.</p
 <p>In our next steps, we explore the insights we uncovered from the survey responses. What patterns, challenges, and expectations emerged from engineers working with multi-cluster environments?</p>
 <p><b>Engineers responded to the survey?</b></p>
 <p>Finally, from our survey, we received responses from 170 engineers. Among them, 159 engineers (93% completion rate) completed all the survey questions, including both required and optional questions. The remaining 11 engineers skipped the optional questions and responded only to the required questions.</p>
-<p><b>*Note
+
+      
+      <p><b>*Note
 We also mentioned during the survey that all responses would be anonymized, and we will not share the raw data directly. Instead, the data has been synthesized and presented in clear and understandable form for the results and aggregated results we are going to share with the multi cluster team as well as Kubecon presentations.</b></p>
 <h2>Process and methods and Tools for analysis:</h2>
 <p>To initiate the analysis process for the survey responses, we began by studying the data multiple times to fully understand and take ownership of it. This helped us better interpret what engineers were trying to convey. We duplicated the original responses and created a separate file named “Analysis.”</p>
@@ -163,15 +165,28 @@ We also mentioned during the survey that all responses would be anonymized, and 
 
 <p><b>Overall Quantitative Insights</b></p>
 <p>We analyzed participant roles, cluster scale, deployment environments, and tenancy models to understand how engineers manage Kubernetes systems. The majority of respondents were Platform Engineers (39%) and DevOps Engineers (26%), showing that multi-cluster management is a cross-functional responsibility. Most engineers manage 1–50+ clusters per month, with over half handling more than 10 clusters, highlighting widespread medium to large-scale operations.</p>
-<p>Cluster deployments are highly distributed, spanning single cloud (48.8%), on-premise (44.7%), multi-cloud (30.6%), and hybrid environments (26.5%), indicating that engineers often operate across multiple infrastructure types. In terms of tenancy, 76.9% of respondents use multi-tenant or hybrid models, reflecting a strong shift toward shared cluster usage.</p>
-<p>Overall, the findings show that Kubernetes multi-cluster operations are widely adopted, cross-functional, and highly complex, driven by scale, environment diversity, and shared infrastructure models.</p>
+ <img src="images/numberofmulticlusterpermonth.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>
+  <img src="images/tenancymodel.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>
+            
+      <p>Cluster deployments are highly distributed, spanning single cloud (48.8%), on-premise (44.7%), multi-cloud (30.6%), and hybrid environments (26.5%), indicating that engineers often operate across multiple infrastructure types. In terms of tenancy, 76.9% of respondents use multi-tenant or hybrid models, reflecting a strong shift toward shared cluster usage.</p>
+
+      <p>Overall, the findings show that Kubernetes multi-cluster operations are widely adopted, cross-functional, and highly complex, driven by scale, environment diversity, and shared infrastructure models.</p>
 
 <p><b>Qualitative insights:</b></p>
+      
 <p>We identified several key patterns in how engineers manage multi-cluster environments. Clusters are deployed across infrastructure providers (cloud, on-prem, edge), often separated by isolation needs, business units, regions for redundancy, and environment stages (dev, staging, production). Among these, environment separation is the most common practice, enabling safe and controlled deployments.</p>
-<p>We also found four major challenges: workload management (51%), observability (39%), operational complexity (25%), and time management (10%). Engineers struggle with distributed visibility, context switching, repetitive tasks, networking complexity, and manual incident handling, where situational awareness is often the biggest bottleneck.</p>
-</p>For future improvements, three key needs emerged: AI-driven automation, flexible system architecture, and simplified UX with clear workflows and documentation. Additionally, a few niche patterns like “dashboard-as-code” and specialized hardware support were also observed.</p>
+ <img src="images/tenancymodel.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>
+      
+      <p>We also found four major challenges: workload management (51%), observability (39%), operational complexity (25%), and time management (10%). Engineers struggle with distributed visibility, context switching, repetitive tasks, networking complexity, and manual incident handling, where situational awareness is often the biggest bottleneck.</p>
+ <img src="images/tenancymodel.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>
+    
+    
+    
+    </p>For future improvements, three key needs emerged: AI-driven automation, flexible system architecture, and simplified UX with clear workflows and documentation. Additionally, a few niche patterns like “dashboard-as-code” and specialized hardware support were also observed.</p>
 
 <p><b>Research Areas and Recommendations</b></p>
+       <img src="images/tenancymodel.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>
+    
 <p>From our analysis, five key research areas emerged: documentation gaps, centralized monitoring, AI-driven automation, operational complexity, and developer UX. To address these, we recommend improving and updating multi-cluster documentation by identifying gaps in existing materials and working with SIG communities to create practical, real-world engineering guides.</p>
 <p>For observability, we recommend building a unified system with shared standards for logs, metrics, storage, network visibility, AI-driven alerts, and role-based dashboards. For automation, AI should handle routine tasks and predict issues before they occur, enabling proactive system management.</p>
 <p>To reduce operational complexity and skill gaps, organizations should invest in hands-on training, zero-trust practices, automation reliability, and peer learning through playbooks. Finally, developer UX should be improved by studying real workflows and designing simpler, more intuitive multi-cluster systems.</p>
@@ -191,9 +206,13 @@ We also mentioned during the survey that all responses would be anonymized, and 
       <p>To make the insights more actionable, we used user research methods such as personas and journey maps to organize the data into clearer patterns, helping better understand user behaviors, pain points, and operational experiences.
 </p>
       <p><b>Method and process:</b></p>
+       <img src="images/tenancymodel.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>
+    
       <p>We created personas and journey maps by first analyzing raw survey data and identifying recurring patterns and themes. These insights were synthesized into key user pain points and goals, which were then structured into persona templates. Journey maps were developed to visualize user workflows, behaviors, and experiences across different stages, helping uncover actionable product insights and opportunities for improvement.</p>
 
       <p><b>Alex Persona: </b></p>
+      <img src="images/tenancymodel.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>  
+      
       <p>Alex is a <b>hybrid engineer who deploys, manages, and maintains observability </b>across multiple Kubernetes clusters in on-prem Edge locations and cloud environments.</p>
 <p>His <b>primary use of multi-cluster</b> setups is to separate environments (production vs. non-production) and distribute workloads across clusters and regions for fault isolation.
 
@@ -232,6 +251,9 @@ We also mentioned during the survey that all responses would be anonymized, and 
       <p>Entire journey insights reveal opportunities to improve <b>tooling, workflows, architecture, frame work, processes, methods, and documentation</b>—helping teams <b>reduce operational friction</b> and deliver a <b>better developer experience</b> for multi-cluster operations.
 
 </p>
+ <img src="images/tenancymodel.png" alt="Multi-Cluster Kubernetes UX Research" style="width:100%;height:100%;object-fit:cover;display:block"/>
+    
+      
       <p><b>Key insights:</b></p>
 <ul>
   <li>Engineers deploying workloads across multi-cluster environments often start with confidence, believing they can manage the complexity with familiar tools and architecture, methods, frame work, documentations.</li>
